@@ -34,7 +34,7 @@ export const Header79 = (props: Header79Props) => {
     <section id="relume" className="relative top-[100px] max-[450px]:top-[71px]">
       <div className="px-[5%]">
         <div className="flex max-h-[60rem] min-h-svh items-center">
-          <div className="container py-16 md:py-24 lg:py-28">
+          <div className="container py-4 md:py-4 lg:py-4">
             <div className="mx-auto max-w-lg text-center">
               <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
                 {heading}
