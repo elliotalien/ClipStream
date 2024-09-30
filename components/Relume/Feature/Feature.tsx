@@ -13,6 +13,7 @@ export const Layout1Slot = (props: Layout1SlotProps) => {
     ...Layout1SlotDefaults,
     ...props,
   } as Props;
+
   return (
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px]">
       <div className="container">
@@ -27,17 +28,25 @@ export const Layout1Slot = (props: Layout1SlotProps) => {
 
 export const Layout1SlotDefaults: Layout1SlotProps = {
   slot1: [
-    <Tagline>Upload</Tagline>,
-    <Heading headingSize="h2">Effortless Video Upload and Segmentation</Heading>,
-    <Text>
+    <Tagline key="tagline">Upload</Tagline>,                                  
+    <Heading key="heading" headingSize="h2">
+      Effortless Video Upload and Segmentation
+    </Heading>,                                                               
+    <Text key="text">
       Our platform simplifies video uploads with a user-friendly interface. Experience advanced segmentation that automatically divides your large videos into manageable clips.
-    </Text>,
-    <div className="flex gap-3">
-      <Button variant="secondary" className="bg-white">Upload</Button>
-      <Button variant="link" size="link" className="text-white" iconRight={<RxChevronRight />}>
-      Learn More
-      </Button>
+    </Text>,                                                                 
+    <div key="buttons" className="flex gap-3">
+      <Button key="upload-button" variant="secondary" className="bg-white">Upload</Button>, // Added key="upload-button"
+      <Button
+        key="learn-more-button"
+        variant="link"
+        size="link"
+        className="text-white"
+        iconRight={<RxChevronRight />}
+      >
+        Learn More
+      </Button>                                                               
     </div>,
   ],
-  slot2: [<Img src="/Feature.jpg" />],
+  slot2: [<Img key="feature-img" src="/Feature.jpg" />],                  
 };
