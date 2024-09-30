@@ -1,6 +1,7 @@
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import React from "react";
+import { headerData } from "@/Data/Data"; 
 
 type ImageProps = {
   src: string;
@@ -27,9 +28,10 @@ export type Header79Props = React.ComponentPropsWithoutRef<"section"> & Partial<
 
 export const Header79 = (props: Header79Props) => {
   const { heading, description, buttons, imagesPartOne, imagesPartTwo } = {
-    ...Header79Defaults,
+    ...headerData,  
     ...props,
   } as Props;
+
   return (
     <section id="relume" className="relative top-[100px] max-[450px]:top-[71px]">
       <div className="px-[5%]">
@@ -98,45 +100,3 @@ const AnimatedImageColumn = ({
     <ImageGrid images={imagesPartTwo} />
   </div>
 );
-
-export const Header79Defaults: Header79Props = {
-  heading: "Streamline Your Video Management Experience Today",
-  description:"Welcome to our innovative platform where managing your video content is effortless. Upload, trim, and share your videos seamlessly with just a few clicks.",
-  buttons: [{ title: "Get Started", className:"bg-white text-black" }, { title: "Learn More", variant: "secondary-alt" }],
-  imagesPartOne: [
-    {
-      src: "Heroimages/1.jpg",
-      alt: "Relume placeholder image 1",
-    },
-    {
-      src: "Heroimages/2.jpg",
-      alt: "Relume placeholder image 2",
-    },
-    {
-      src: "Heroimages/3.jpg",
-      alt: "Relume placeholder image 3",
-    },
-    {
-      src: "Heroimages/4.jpg",
-      alt: "Relume placeholder image 4",
-    },
-  ],
-  imagesPartTwo: [
-    {
-      src: "Heroimages/5.jpg",
-      alt: "Relume placeholder image 5",
-    },
-    {
-      src: "Heroimages/6.jpg",
-      alt: "Relume placeholder image 6",
-    },
-    {
-      src: "Heroimages/7.jpg",
-      alt: "Relume placeholder image 7",
-    },
-    {
-      src: "Heroimages/8.jpg",
-      alt: "Relume placeholder image 8",
-    },
-  ],
-};

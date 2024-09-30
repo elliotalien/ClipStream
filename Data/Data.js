@@ -24,3 +24,63 @@ export const Navbar1Defaults = {
     ],
   };
   
+
+
+
+export const headerData = {
+  
+    heading: "Streamline Your Video Management Experience Today",  // Main heading text
+    
+    description:                                                   // Description below the heading
+      "Welcome to our innovative platform where managing your video content is effortless. Upload, trim, and share your videos seamlessly with just a few clicks.",
+    
+    buttons: [                                                     // Array of buttons to display in the header
+      { 
+        title: "Get Started",                                      // Text for the primary button
+        className: "bg-white text-black"                           // CSS class for styling the primary button
+      },
+      { 
+        title: "Learn More",                                       // Text for the secondary button
+        variant: "secondary-alt"                                   // Variant style for the secondary button
+      },
+    ],
+  
+    imagesPartOne: [                                               // Array of images for the first column of images
+      {
+        src: "Heroimages/1.jpg",                                   // Image source path for the first image
+        alt: "Relume placeholder image 1",                         // Alt text for the first image
+      },
+      {
+        src: "Heroimages/2.jpg",                                   // Image source path for the second image
+        alt: "Relume placeholder image 2",                         // Alt text for the second image
+      },
+      {
+        src: "Heroimages/3.jpg",                                   // Image source path for the third image
+        alt: "Relume placeholder image 3",                         // Alt text for the third image
+      },
+      {
+        src: "Heroimages/4.jpg",                                   // Image source path for the fourth image
+        alt: "Relume placeholder image 4",                         // Alt text for the fourth image
+      },
+    ],
+  
+    imagesPartTwo: [                                               // Array of images for the second column of images
+      {
+        src: "Heroimages/5.jpg",                                   // Image source path for the fifth image
+        alt: "Relume placeholder image 5",                         // Alt text for the fifth image
+      },
+      {
+        src: "Heroimages/6.jpg",                                   // Image source path for the sixth image
+        alt: "Relume placeholder image 6",                         // Alt text for the sixth image
+      },
+      {
+        src: "Heroimages/7.jpg",                                   // Image source path for the seventh image
+        alt: "Relume placeholder image 7",                         // Alt text for the seventh image
+      },
+      {
+        src: "Heroimages/8.jpg",                                   // Image source path for the eighth image
+        alt: "Relume placeholder image 8",                         // Alt text for the eighth image
+      },
+    ],
+  };
+  
