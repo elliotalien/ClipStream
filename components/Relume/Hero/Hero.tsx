@@ -36,7 +36,7 @@ export const Header79 = (props: Header79Props) => {
         <div className="flex max-h-[60rem] min-h-svh items-center">
           <div className="container py-4 md:py-4 lg:py-4">
             <div className="mx-auto max-w-lg text-center">
-              <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-10xl">
+              <h1 className="mb-5 text-6xl font-bold text-text-alternative md:mb-6 md:text-9xl lg:text-[50px]">
                 {heading}
               </h1>
               <p className="text-text-alternative md:text-md">{description}</p>
