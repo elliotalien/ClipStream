@@ -11,7 +11,7 @@ export const Navbar1Defaults = {
     ],
     buttons: [
       {
-        title: "Button",               // GENERIC BUTTON WITH STYLES
+        title: "Sign up",               // GENERIC BUTTON WITH STYLES
         className: "bg-white",         // CUSTOM CSS CLASS (BACKGROUND WHITE)
         variant: "secondary",          // VARIANT OF THE BUTTON (STYLES CAN BE BASED ON VARIANT)
         size: "sm",                    // SMALL SIZE BUTTON
