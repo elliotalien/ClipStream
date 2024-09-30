@@ -38,7 +38,7 @@ export const Layout1SlotDefaults: Layout1SlotProps = {
     <div key="buttons" className="flex gap-3">
       <Button key="upload-button" variant="secondary" className="bg-white">
         Upload
-      </Button>,
+      </Button>
       <Button
         key="learn-more-button"
         variant="link"
