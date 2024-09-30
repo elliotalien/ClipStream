@@ -109,9 +109,9 @@ export const Navbar1 = (props: Navbar1Props) => {
 
           <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             {buttons.map((button, index) => (
-              <Button key={index} {...button} className="w-full">
-                {button.title}
-              </Button>
+             <Button key={index} {...button} className={`w-full ${button.className || ''}`}>
+             {button.title}
+           </Button>           
             ))}
           </div>
         </motion.div>

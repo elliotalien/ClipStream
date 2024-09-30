@@ -102,7 +102,7 @@ const AnimatedImageColumn = ({
 export const Header79Defaults: Header79Props = {
   heading: "Streamline Your Video Management Experience Today",
   description:"Welcome to our innovative platform where managing your video content is effortless. Upload, trim, and share your videos seamlessly with just a few clicks.",
-  buttons: [{ title: "Get Started" }, { title: "Learn More", variant: "secondary-alt" }],
+  buttons: [{ title: "Get Started", className:"bg-white text-black" }, { title: "Learn More", variant: "secondary-alt" }],
   imagesPartOne: [
     {
       src: "Heroimages/1.jpg",
