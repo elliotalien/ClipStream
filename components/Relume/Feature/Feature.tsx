@@ -28,15 +28,17 @@ export const Layout1Slot = (props: Layout1SlotProps) => {
 
 export const Layout1SlotDefaults: Layout1SlotProps = {
   slot1: [
-    <Tagline key="tagline">Upload</Tagline>,                                  
+    <Tagline key="tagline">Upload</Tagline>,
     <Heading key="heading" headingSize="h2">
       Effortless Video Upload and Segmentation
-    </Heading>,                                                               
+    </Heading>,
     <Text key="text">
       Our platform simplifies video uploads with a user-friendly interface. Experience advanced segmentation that automatically divides your large videos into manageable clips.
-    </Text>,                                                                 
+    </Text>,
     <div key="buttons" className="flex gap-3">
-      <Button key="upload-button" variant="secondary" className="bg-white">Upload</Button>, // Added key="upload-button"
+      <Button key="upload-button" variant="secondary" className="bg-white">
+        Upload
+      </Button>,
       <Button
         key="learn-more-button"
         variant="link"
@@ -45,8 +47,8 @@ export const Layout1SlotDefaults: Layout1SlotProps = {
         iconRight={<RxChevronRight />}
       >
         Learn More
-      </Button>                                                               
+      </Button>
     </div>,
   ],
-  slot2: [<Img key="feature-img" src="/Feature.jpg" />],                  
+  slot2: [<Img key="feature-img" src="/Feature.jpg" />],
 };
