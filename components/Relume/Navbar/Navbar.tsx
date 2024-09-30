@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Button, useMediaQuery } from "@relume_io/relume-ui";
-import { AnimatePresence, motion } from "framer-motion";
+import { Button } from "@relume_io/relume-ui";
+import { motion } from "framer-motion";
 import { Navbar1Defaults } from "../../../Data/Data";
 
-// DEFINE ANIMATION VARIANTS
+
 const topLineVariants = {
   open: { rotate: 45, y: 6 },
   closed: { rotate: 0, y: 0 },
@@ -32,10 +32,15 @@ type NavLink = {
   title: string;
 };
 
+type ButtonProps = {
+  title: string;
+  [key: string]: unknown;
+};
+
 type Props = {
   logo: ImageProps;
   navLinks: NavLink[];
-  buttons: any[];
+  buttons: ButtonProps[];
 };
 
 export type Navbar1Props = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
@@ -47,7 +52,6 @@ export const Navbar1 = (props: Navbar1Props) => {
   } as Props;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const isMobile = useMediaQuery("(max-width: 991px)");
 
   return (
     <nav className="flex w-full items-center border-b border-border-primary bg-black lg:min-h-18 lg:px-[5%] fixed z-10">
@@ -57,12 +61,12 @@ export const Navbar1 = (props: Navbar1Props) => {
             <img src={logo.src} alt={logo.alt} className="w-[40%]"/>
           </a>
           <button
-            className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden "
+            className="-mr-2 flex size-12 flex-col items-center justify-center lg:hidden"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
             <motion.span
               className="my-[3px] h-0.5 w-6 bg-white"
-              animate={isMobileMenuOpen ? ["open"] : "closed"}
+              animate={isMobileMenuOpen ? "open" : "closed"}
               variants={topLineVariants}
             />
             <motion.span
@@ -72,7 +76,7 @@ export const Navbar1 = (props: Navbar1Props) => {
             />
             <motion.span
               className="my-[3px] h-0.5 w-6 bg-white"
-              animate={isMobileMenuOpen ? ["open"] : "closed"}
+              animate={isMobileMenuOpen ? "open" : "closed"}
               variants={bottomLineVariants}
             />
           </button>
