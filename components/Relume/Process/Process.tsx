@@ -1,6 +1,7 @@
+"use client";
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
-import { RxChevronRight } from "react-icons/rx";
+import { Layout242Defaults } from "@/Data/Data"; 
 
 type ImageProps = {
   src: string;
@@ -54,55 +55,4 @@ export const Layout242 = (props: Layout242Props) => {
       </div>
     </section>
   );
-};
-
-export const Layout242Defaults: Layout242Props = {
-  heading: "Effortlessly upload and segment your videos into smaller clips.",
-  sections: [
-    {
-      icon: {
-        src: "icons/Upload.png",
-        alt: "Relume logo 1",
-      },
-      heading: "Automatic video segmentation made simple and efficient.",
-      description:
-      "Our platform allows you to upload large videos seamlessly.",
-      button: {
-        title: "Upload",
-        variant: "link",
-        size: "link",
-        iconRight: <RxChevronRight />,
-      },
-    },
-    {
-      icon: {
-        src: "icons/Download.png",
-        alt: "Relume logo 2",
-      },
-      heading: "Transform your videos into easily shareable clips in seconds.",
-      description:
-      "Experience the convenience of automatic video trimming after your upload.",
-      button: {
-        title: "Download",
-        variant: "link",
-        size: "link",
-        iconRight: <RxChevronRight />,
-      },
-    },
-    {
-      icon: {
-        src: "icons/Play.png",
-        alt: "Relume logo 3",
-      },
-      heading: "Start your video editing journey with just a few clicks.",
-      description:
-        "Join our community and make video sharing effortless.",
-      button: {
-        title: "Play",
-        variant: "link",
-        size: "link",
-        iconRight: <RxChevronRight />,
-      },
-    },
-  ],
 };

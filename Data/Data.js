@@ -84,3 +84,59 @@ export const headerData = {
     ],
   };
   
+
+
+
+export const Layout242Defaults = {
+  heading: "Effortlessly upload and segment your videos into smaller clips.", // Main heading for the layout
+  sections: [
+    {
+      icon: {
+        src: "icons/Upload.png", // Icon image for the first section
+        alt: "Relume logo 1", // Alt text for accessibility
+      },
+      heading: "Automatic video segmentation made simple and efficient.", // Heading for the first section
+      description:
+        "Our platform allows you to upload large videos seamlessly.", // Description of the feature
+      button: {
+        title: "Upload", // Button text
+        variant: "link", // Button variant (style)
+        size: "link", // Button size (style)
+        iconRight: null, // No icon on the right of the button
+        iconLeft: null,  // No icon on the left of the button
+      },
+    },
+    {
+      icon: {
+        src: "icons/Download.png", // Icon image for the second section
+        alt: "Relume logo 2", // Alt text for accessibility
+      },
+      heading: "Transform your videos into easily shareable clips in seconds.", // Heading for the second section
+      description:
+        "Experience the convenience of automatic video trimming after your upload.", // Description of the feature
+      button: {
+        title: "Download", // Button text
+        variant: "link", // Button variant (style)
+        size: "link", // Button size (style)
+        iconRight: null, // No icon on the right of the button
+        iconLeft: null,  // No icon on the left of the button
+      },
+    },
+    {
+      icon: {
+        src: "icons/Play.png", // Icon image for the third section
+        alt: "Relume logo 3", // Alt text for accessibility
+      },
+      heading: "Start your video editing journey with just a few clicks.", // Heading for the third section
+      description:
+        "Join our community and make video sharing effortless.", // Description of the feature
+      button: {
+        title: "Play", // Button text
+        variant: "link", // Button variant (style)
+        size: "link", // Button size (style)
+        iconRight: null, // No icon on the right of the button
+        iconLeft: null,  // No icon on the left of the button
+      },
+    },
+  ],
+};
