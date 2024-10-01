@@ -180,3 +180,17 @@ export const Layout6SlotDefaults = {
     />,
   ],
 };
+
+
+export const Testimonial1Defaults = {
+  quote:
+    '"Using this platform transformed our video editing process! The automatic segmentation saved us hours of work and improved our workflow immensely."',
+  avatar: {
+    src: "Man.jpg",
+    alt: "Testimonial avatar",
+  },
+  name: "Jane Doe",
+  position: "Editor",
+  companyName: "Media Corp",
+};
+
