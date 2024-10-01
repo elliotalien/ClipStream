@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { Button } from "@relume_io/relume-ui";
 import { motion } from "framer-motion";
-import { Navbar1Defaults } from "../../../Data/Data";
-
+import Link from "next/link";
+import { Navbar1Defaults } from "@/Data/Data"; 
 
 const topLineVariants = {
   open: { rotate: 45, y: 6 },
@@ -33,6 +33,7 @@ type NavLink = {
 
 type ButtonProps = {
   title: string;
+  url: string;  
   [key: string]: unknown;
 };
 
@@ -108,9 +109,11 @@ export const Navbar1 = (props: Navbar1Props) => {
 
           <div className="mt-6 flex flex-col items-center gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
             {buttons.map((button, index) => (
-             <Button key={index} {...button} className={`w-full ${button.className || ''}`}>
-             {button.title}
-           </Button>           
+              <Link key={index} href={button.url} className="w-full">
+                <Button {...button} className={`w-full ${button.className || ''}`}>
+                  {button.title}
+                </Button>
+              </Link>
             ))}
           </div>
         </motion.div>

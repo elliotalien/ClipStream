@@ -28,7 +28,7 @@ export const Layout242 = (props: Layout242Props) => {
     <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px] bg-black/95 text-white max-[450px]:top-[71px]">
       <div className="container flex flex-col items-start ">
         <div className="rb-12 mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
-          <h3 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">{heading}</h3>
+          <h3 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-8xl">{heading}</h3>
         </div>
         <div className="grid grid-cols-1 items-start gap-y-12 md:grid-cols-3 md:gap-x-8 md:gap-y-16 lg:gap-x-12">
           {sections.map((section, index) => (

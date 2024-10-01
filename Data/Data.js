@@ -1,85 +1,88 @@
 export const Navbar1Defaults = {
-    logo: {
-      url: "#",         // LINK TO THE HOME OR ANY PAGE WHEN CLICKING ON THE LOGO
-      src: "Logo.png",  // IMAGE FILE NAME FOR THE LOGO
-      alt: "Logo image",// ACCESSIBILITY TEXT FOR SCREEN READERS
+  logo: {
+    url: "/",
+    src: "Logo.png",
+    alt: "Logo image",
+  },
+  navLinks: [
+    { title: "Home", url: "/" },
+    { title: "About", url: "/about" },
+    { title: "Contact", url: "/contact" },
+  ],
+  buttons: [
+    {
+      title: "Sign up",
+      className: "bg-white",
+      variant: "secondary",
+      size: "sm",
+      url: "/Signup",
     },
-    navLinks: [
-      { title: "Home", url: "#" },     // HOME LINK
-      { title: "About", url: "#" },    // ABOUT LINK
-      { title: "Contact", url: "#" },  // CONTACT LINK
-    ],
-    buttons: [
-      {
-        title: "Sign up",               // GENERIC BUTTON WITH STYLES
-        className: "bg-white",         // CUSTOM CSS CLASS (BACKGROUND WHITE)
-        variant: "secondary",          // VARIANT OF THE BUTTON (STYLES CAN BE BASED ON VARIANT)
-        size: "sm",                    // SMALL SIZE BUTTON
-      },
-      {
-        title: "Login",                // LOGIN BUTTON WITHOUT SPECIFIC CLASS OR VARIANT
-        size: "sm",                    // SMALL SIZE BUTTON
-        className:"border-inherit"     // CUSTOM CSS CLASS (BORDER)
-      },
-    ],
-  };
+    {
+      title: "Login",
+      size: "sm",
+      className: "border-inherit",
+      url: "/Login",
+    },
+  ],
+};
+
   
 
 
 
 export const headerData = {
   
-    heading: "Streamline Your Video Management Experience Today",  // Main heading text
+    heading: "Streamline Your Video Management Experience Today",  
     
-    description:                                                   // Description below the heading
+    description:                                                   
       "Welcome to our innovative platform where managing your video content is effortless. Upload, trim, and share your videos seamlessly with just a few clicks.",
     
-    buttons: [                                                     // Array of buttons to display in the header
+    buttons: [                                                   
       { 
-        title: "Get Started",                                      // Text for the primary button
-        className: "bg-white text-black"                           // CSS class for styling the primary button
+        title: "Get Started",                                      
+        className: "bg-white text-black"                          
       },
       { 
-        title: "Learn More",                                       // Text for the secondary button
-        variant: "secondary-alt"                                   // Variant style for the secondary button
+        title: "Learn More",                                      
+        variant: "secondary-alt"                                 
       },
     ],
   
-    imagesPartOne: [                                               // Array of images for the first column of images
+    imagesPartOne: [                                            
       {
-        src: "Heroimages/1.jpg",                                   // Image source path for the first image
-        alt: "Relume placeholder image 1",                         // Alt text for the first image
+        src: "Heroimages/1.jpg",                                   
+        alt: "Relume placeholder image 1",                       
       },
       {
-        src: "Heroimages/2.jpg",                                   // Image source path for the second image
-        alt: "Relume placeholder image 2",                         // Alt text for the second image
+        src: "Heroimages/2.jpg",                                   
+        alt: "Relume placeholder image 2",                         
       },
       {
-        src: "Heroimages/3.jpg",                                   // Image source path for the third image
-        alt: "Relume placeholder image 3",                         // Alt text for the third image
+        src: "Heroimages/3.jpg",                                   
+        alt: "Relume placeholder image 3",                       
       },
       {
-        src: "Heroimages/4.jpg",                                   // Image source path for the fourth image
-        alt: "Relume placeholder image 4",                         // Alt text for the fourth image
+        src: "Heroimages/4.jpg",                                   
+        alt: "Relume placeholder image 4",                         
       },
     ],
   
-    imagesPartTwo: [                                               // Array of images for the second column of images
+    imagesPartTwo: [                                              
       {
-        src: "Heroimages/5.jpg",                                   // Image source path for the fifth image
-        alt: "Relume placeholder image 5",                         // Alt text for the fifth image
+        src: "Heroimages/5.jpg",                                  
+        alt: "Relume placeholder image 5",                         
       },
       {
-        src: "Heroimages/6.jpg",                                   // Image source path for the sixth image
-        alt: "Relume placeholder image 6",                         // Alt text for the sixth image
+        src: "Heroimages/6.jpg",                                   
+        alt: "Relume placeholder image 6",                         
       },
       {
-        src: "Heroimages/7.jpg",                                   // Image source path for the seventh image
-        alt: "Relume placeholder image 7",                         // Alt text for the seventh image
+        src: "Heroimages/7.jpg",                                   
+        alt: "Relume placeholder image 7",                         
       },
       {
-        src: "Heroimages/8.jpg",                                   // Image source path for the eighth image
-        alt: "Relume placeholder image 8",                         // Alt text for the eighth image
+        src: "Heroimages/8.jpg",                                  
+        alt: "Relume placeholder image 8",                         
       },
     ],
   };
@@ -90,55 +93,90 @@ export const headerData = {
 import { RxChevronRight } from "react-icons/rx";
 
 export const Layout242Defaults = {
-  heading: "Effortlessly upload and segment your videos into smaller clips.", // Main heading for the layout
+  heading: "Effortlessly upload and segment your videos into smaller clips.", 
   sections: [
     {
       icon: {
-        src: "icons/Upload.png", // Icon image for the first section
-        alt: "Relume logo 1", // Alt text for accessibility
+        src: "icons/Upload.png", 
+        alt: "Relume logo 1",
       },
-      heading: "Automatic video segmentation made simple and efficient.", // Heading for the first section
+      heading: "Automatic video segmentation made simple and efficient.", 
       description:
-        "Our platform allows you to upload large videos seamlessly.", // Description of the feature
+        "Our platform allows you to upload large videos seamlessly.", 
       button: {
-        title: "Upload", // Button text
-        variant: "link", // Button variant (style)
-        size: "link", // Button size (style)
-        iconRight: <RxChevronRight />, // Add the right icon here
-        iconLeft: null, // No icon on the left of the button
+        title: "Upload", 
+        variant: "link",
+        size: "link", 
+        iconRight: <RxChevronRight />, 
+        iconLeft: null, 
       },
     },
     {
       icon: {
-        src: "icons/Download.png", // Icon image for the second section
-        alt: "Relume logo 2", // Alt text for accessibility
+        src: "icons/Download.png", 
+        alt: "Relume logo 2", 
       },
-      heading: "Transform your videos into easily shareable clips in seconds.", // Heading for the second section
+      heading: "Transform your videos into easily shareable clips in seconds.", 
       description:
-        "Experience the convenience of automatic video trimming after your upload.", // Description of the feature
+        "Experience the convenience of automatic video trimming after your upload.", 
       button: {
-        title: "Download", // Button text
-        variant: "link", // Button variant (style)
-        size: "link", // Button size (style)
-        iconRight: <RxChevronRight />, // Add the right icon here
-        iconLeft: null, // No icon on the left of the button
+        title: "Download", 
+        variant: "link", 
+        size: "link", 
+        iconRight: <RxChevronRight />, 
+        iconLeft: null, 
       },
     },
     {
       icon: {
-        src: "icons/Play.png", // Icon image for the third section
-        alt: "Relume logo 3", // Alt text for accessibility
+        src: "icons/Play.png", 
+        alt: "Relume logo 3", 
       },
-      heading: "Start your video editing journey with just a few clicks.", // Heading for the third section
+      heading: "Start your video editing journey with just a few clicks.", 
       description:
-        "Join our community and make video sharing effortless.", // Description of the feature
+        "Join our community and make video sharing effortless.", 
       button: {
-        title: "Play", // Button text
-        variant: "link", // Button variant (style)
-        size: "link", // Button size (style)
-        iconRight: <RxChevronRight />, // Add the right icon here
-        iconLeft: null, // No icon on the left of the button
+        title: "Play", 
+        variant: "link", 
+        size: "link", 
+        iconRight: <RxChevronRight />, 
+        iconLeft: null, 
       },
     },
+  ],
+};
+
+
+
+import { Heading, Text, Img } from "@relume_io/relume-ui"; 
+
+
+export const Layout6SlotDefaults = {
+  slot2: [ 
+    <Heading headingSize="h2" key="heading">
+      Unlock the Power of Efficient Video Management with Our Service
+    </Heading>,
+    <Text key="text1"> 
+      Save time and streamline your workflow with our automated video segmentation. Experience hassle-free video management that adapts to your needs.
+    </Text>,
+    <div key="subheading1"> 
+      <Heading headingSize="h6">Time-Saving</Heading>
+      <Text>
+        Upload large videos and let our platform handle the trimming automatically. 
+      </Text>
+    </div>,
+    <div key="subheading2"> 
+      <Heading headingSize="h6">Efficient Management</Heading>
+      <Text>
+        Easily organize and access your video clips with our intuitive interface. 
+      </Text>
+    </div>,
+  ],
+  slot1: [ 
+    <Img
+      src="/Service.jpg" 
+      alt="Relume placeholder image" 
+      key="image" 
+    />,
   ],
 };
