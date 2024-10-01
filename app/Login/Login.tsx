@@ -66,7 +66,7 @@ export const Login7 = (props: Login7Props) => {
       <div className="relative grid min-h-screen grid-cols-1 items-stretch justify-center overflow-auto lg:grid-cols-2 bg-black/95 text-white">
         <div className="absolute bottom-auto left-0 right-0 top-0 z-10 flex h-16 w-full items-center justify-center px-[5%] md:h-18 lg:justify-between">
           <a href={logo.url}>
-            <img src={logo.src} alt={logo.alt} className="w-[30%]" />
+            <img src={logo.src} alt={logo.alt} className="w-[40%]" />
           </a>
         </div>
         <div className="relative mx-[5vw] flex items-center justify-center pb-16 pt-20 md:pb-20 md:pt-24 lg:py-20">
