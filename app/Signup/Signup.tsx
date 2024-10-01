@@ -150,7 +150,7 @@ export const Signup7 = (props: Signup7Props) => {
 
 export const Signup7Defaults: Signup7Props = {
   logo: {
-    url: "#",
+    url: "/",
     src: "Logo.png",
     alt: "Logo text",
   },

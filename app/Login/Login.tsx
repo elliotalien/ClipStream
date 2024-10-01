@@ -147,7 +147,7 @@ export const Login7 = (props: Login7Props) => {
 
 export const Login7Defaults: Login7Props = {
   logo: {
-    url: "#",
+    url: "/",
     src: "Logo.png",
     alt: "Logo text",
   },
