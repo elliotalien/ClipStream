@@ -87,6 +87,8 @@ export const headerData = {
 
 
 
+import { RxChevronRight } from "react-icons/rx";
+
 export const Layout242Defaults = {
   heading: "Effortlessly upload and segment your videos into smaller clips.", // Main heading for the layout
   sections: [
@@ -102,8 +104,8 @@ export const Layout242Defaults = {
         title: "Upload", // Button text
         variant: "link", // Button variant (style)
         size: "link", // Button size (style)
-        iconRight: null, // No icon on the right of the button
-        iconLeft: null,  // No icon on the left of the button
+        iconRight: <RxChevronRight />, // Add the right icon here
+        iconLeft: null, // No icon on the left of the button
       },
     },
     {
@@ -118,8 +120,8 @@ export const Layout242Defaults = {
         title: "Download", // Button text
         variant: "link", // Button variant (style)
         size: "link", // Button size (style)
-        iconRight: null, // No icon on the right of the button
-        iconLeft: null,  // No icon on the left of the button
+        iconRight: <RxChevronRight />, // Add the right icon here
+        iconLeft: null, // No icon on the left of the button
       },
     },
     {
@@ -134,8 +136,8 @@ export const Layout242Defaults = {
         title: "Play", // Button text
         variant: "link", // Button variant (style)
         size: "link", // Button size (style)
-        iconRight: null, // No icon on the right of the button
-        iconLeft: null,  // No icon on the left of the button
+        iconRight: <RxChevronRight />, // Add the right icon here
+        iconLeft: null, // No icon on the left of the button
       },
     },
   ],
