@@ -24,7 +24,7 @@ export type Layout242Props = React.ComponentPropsWithoutRef<"section"> & Partial
 export const Layout242 = (props: Layout242Props) => {
   const { heading, sections } = { ...props, ...Layout242Defaults } as Props;
   return (
-    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px] ">
+    <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px] bg-black/95 text-white max-[450px]:top-[71px]">
       <div className="container flex flex-col items-start ">
         <div className="rb-12 mb-12 w-full max-w-lg md:mb-18 lg:mb-20">
           <h3 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">{heading}</h3>

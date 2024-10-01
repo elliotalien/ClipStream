@@ -53,7 +53,7 @@ export const Header79 = (props: Header79Props) => {
           </div>
           <div className="absolute inset-0 -z-10 overflow-hidden">
             <div className="absolute inset-0 z-10 bg-black/50" />
-            <div className="grid w-full grid-cols-2 gap-x-4 px-4 md:grid-cols-3 lg:grid-cols-5">
+            <div className="grid w-full grid-cols-2 gap-x-4 px-4 md:grid-cols-3 lg:grid-cols-5 bg-black/95">
               {imageColumns.map((column, index) => (
                 <AnimatedImageColumn
                   key={index}
