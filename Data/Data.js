@@ -194,3 +194,16 @@ export const Testimonial1Defaults = {
   companyName: "Media Corp",
 };
 
+
+
+export const Cta5Defaults = {
+  heading: "Start Your Video Editing Journey",
+  description:
+    "Join us today and transform your large videos into easily shareable clips with just a click!",
+  buttons: [
+    { title: "Get Started", className: "bg-white text-black" },
+    { title: "Learn More", variant: "secondary-alt" },
+  ],
+  video: "https://d22po4pjz3o32e.cloudfront.net/placeholder-video.mp4",
+  videoType: "video/mp4",
+};
