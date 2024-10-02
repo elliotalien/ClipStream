@@ -3,7 +3,7 @@ import { Header79 } from "@/components/Relume/Hero/Hero";
 import { Layout1Slot } from "@/components/Relume/Feature/Feature";
 import { Layout242 } from "@/components/Relume/Process/Process";
 import { Layout6Slot } from "@/components/Relume/OurServices/Ourservices";
-import { Testimonial1 } from "@/components/Relume/Testimonia/testimonia";
+import { Testimonial1 } from "@/components/Relume/Testimonial/testimonia";
 
 export default function Home() {
   return (
