@@ -5,9 +5,9 @@ export const Navbar1Defaults = {
     alt: "Logo image",
   },
   navLinks: [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/about" },
-    { title: "Contact", url: "/contact" },
+    { title: "Home", url: "#Home" },
+    { title: "About", url: "#About" },
+    { title: "Contact", url: "#Contact" },
   ],
   buttons: [
     {

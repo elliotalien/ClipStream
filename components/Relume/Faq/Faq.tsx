@@ -32,7 +32,7 @@ import {
       ...props,
     } as Props;
     return (
-      <section id="relume" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px] max-[450px]:top-[71px] bg-black/95 text-white">
+      <section id="Contact" className="px-[5%] py-16 md:py-24 lg:py-28 relative top-[100px] max-[450px]:top-[71px] bg-black/95 text-white">
         <div className="container">
           <div className="rb-12 mb-12 max-w-lg md:mb-18 lg:mb-20">
             <h2 className="rb-5 mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">
@@ -59,7 +59,7 @@ import {
               </AccordionItem>
             ))}
           </Accordion>
-          <div className=" mt-12 md:mt-18 lg:mt-20">
+          <div  className=" mt-12 md:mt-18 lg:mt-20">
             <h4 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
               {footerHeading}
             </h4>
