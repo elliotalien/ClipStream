@@ -1,4 +1,3 @@
-"use client";
 import { Button, Tagline, Heading, Text, Img } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 

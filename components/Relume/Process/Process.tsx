@@ -1,4 +1,3 @@
-"use client";
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import { Layout242Defaults } from "@/Data/Data"; 
