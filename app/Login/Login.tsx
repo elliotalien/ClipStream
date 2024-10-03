@@ -148,7 +148,7 @@ export const Login7 = (props: Login7Props) => {
 export const Login7Defaults: Login7Props = {
   logo: {
     url: "/",
-    src: "Logo.png",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953686/Logo_facxld.png",
     alt: "Logo text",
   },
   title: "Log in",
@@ -162,7 +162,7 @@ export const Login7Defaults: Login7Props = {
     iconLeft: <BiLogoGoogle className="size-6" />,
   },
   image: {
-    src: "Login.jpg",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953716/Login_hkly9f.jpg",
     alt: "Relume placeholder image",
   },
   forgotPassword: {

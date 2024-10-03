@@ -1,7 +1,7 @@
 export const Navbar1Defaults = {
   logo: {
     url: "/",
-    src: "Logo.png",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953686/Logo_facxld.png",
     alt: "Logo image",
   },
   navLinks: [
@@ -50,39 +50,39 @@ export const headerData = {
   
     imagesPartOne: [                                            
       {
-        src: "Heroimages/1.jpg",                                   
-        alt: "Relume placeholder image 1",                       
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951672/1_tywroc.jpg",                                   
+        alt: "Heroimage",                       
       },
       {
-        src: "Heroimages/2.jpg",                                   
-        alt: "Relume placeholder image 2",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951668/2_lluq4v.jpg",                                   
+        alt: "Heroimage",                         
       },
       {
-        src: "Heroimages/3.jpg",                                   
-        alt: "Relume placeholder image 3",                       
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951664/3_jcqlo0.jpg",                                   
+        alt: "Heroimage",                       
       },
       {
-        src: "Heroimages/4.jpg",                                   
-        alt: "Relume placeholder image 4",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951666/4_bq3hpr.jpg",                                   
+        alt: "Heroimage",                         
       },
     ],
   
     imagesPartTwo: [                                              
       {
-        src: "Heroimages/5.jpg",                                  
-        alt: "Relume placeholder image 5",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951669/5_xpum8c.jpg",                                  
+        alt: "Heroimage",                         
       },
       {
-        src: "Heroimages/6.jpg",                                   
-        alt: "Relume placeholder image 6",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951668/6_ngs7mk.jpg",                                   
+        alt: "Heroimage",                         
       },
       {
-        src: "Heroimages/7.jpg",                                   
-        alt: "Relume placeholder image 7",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951668/7_cbtxn0.jpg",                                   
+        alt: "Heroimage",                         
       },
       {
-        src: "Heroimages/8.jpg",                                  
-        alt: "Relume placeholder image 8",                         
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727951671/8_odiq6e.jpg",                                  
+        alt: "Heroimage",                         
       },
     ],
   };
@@ -97,7 +97,7 @@ export const Layout242Defaults = {
   sections: [
     {
       icon: {
-        src: "icons/Upload.png", 
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953172/Upload_l0heuz.png", 
         alt: "Relume logo 1",
       },
       heading: "Automatic video segmentation made simple and efficient.", 
@@ -113,7 +113,7 @@ export const Layout242Defaults = {
     },
     {
       icon: {
-        src: "icons/Download.png", 
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953164/Download_pfmqan.png", 
         alt: "Relume logo 2", 
       },
       heading: "Transform your videos into easily shareable clips in seconds.", 
@@ -129,7 +129,7 @@ export const Layout242Defaults = {
     },
     {
       icon: {
-        src: "icons/Play.png", 
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953169/Play_m4k0nz.png", 
         alt: "Relume logo 3", 
       },
       heading: "Start your video editing journey with just a few clicks.", 
@@ -155,7 +155,7 @@ export const Layout415Defaults = {
   featureSections: [
     {
       icon: {
-        src: "icons/Time.png",
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953171/Time_o44sjr.png",
         alt: "Time image",
       },
       title: "Time-Saving",
@@ -164,7 +164,7 @@ export const Layout415Defaults = {
     },
     {
       icon: {
-        src: "icons/fast.png",
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953166/fast_a0kfvb.png",
         alt: "Efficient image",
       },
       title: "Efficient Management",
@@ -173,7 +173,7 @@ export const Layout415Defaults = {
     },
     {
       icon: {
-        src: "icons/customizable.png",
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953163/customizable_ylv7mm.png",
         alt: "customizable image",
       },
       title: "Customizable Segments",
@@ -182,7 +182,7 @@ export const Layout415Defaults = {
     },
     {
       icon: {
-        src: "icons/integrity.png",
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953167/integrity_maphra.png",
         alt: "integrity image",
       },
       title: "Seamless Integration",
@@ -191,7 +191,7 @@ export const Layout415Defaults = {
     },
     {
       icon: {
-        src: "icons/analytics.png",
+        src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953163/analytics_dfce2t.png",
         alt: "analytics image",
       },
       title: "Advanced Analytics",
@@ -207,7 +207,7 @@ export const Testimonial1Defaults = {
   quote:
     '"Using this platform transformed our video editing process! The automatic segmentation saved us hours of work and improved our workflow immensely."',
   avatar: {
-    src: "Man.jpg",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953725/Man_woezcd.jpg",
     alt: "Testimonial avatar",
   },
   name: "Jane Doe",
@@ -276,7 +276,7 @@ import {BiLogoFacebookCircle,BiLogoInstagram,BiLogoLinkedinSquare,BiLogoYoutube,
 export const Footer5Defaults = {
   logo: {
     url: "/",
-    src: "Logo.png",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953686/Logo_facxld.png",
     alt: "Logo image",
   },
   newsletterHeading: "Subscribe to Updates",

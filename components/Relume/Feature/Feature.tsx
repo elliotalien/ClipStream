@@ -50,5 +50,5 @@ export const Layout1SlotDefaults: Layout1SlotProps = {
       </Button>
     </div>,
   ],
-  slot2: [<Img key="feature-img" src="/Feature.jpg" />],
+  slot2: [<Img key="feature-img" src="https://res.cloudinary.com/do5et2jlh/image/upload/v1727952839/Feature_gyljzn.jpg" />],
 };

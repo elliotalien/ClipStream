@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="favicon.png" />
+        <link rel="icon" href="https://res.cloudinary.com/do5et2jlh/image/upload/v1727953667/favicon_ffqj8y.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>

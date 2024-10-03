@@ -151,7 +151,7 @@ export const Signup7 = (props: Signup7Props) => {
 export const Signup7Defaults: Signup7Props = {
   logo: {
     url: "/",
-    src: "Logo.png",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953686/Logo_facxld.png",
     alt: "Logo text",
   },
   title: "Sign Up",
@@ -165,7 +165,7 @@ export const Signup7Defaults: Signup7Props = {
     iconLeft: <BiLogoGoogle className="size-6" />,
   },
   image: {
-    src: "Login.jpg",
+    src: "https://res.cloudinary.com/do5et2jlh/image/upload/v1727953716/Login_hkly9f.jpg",
     alt: "Relume placeholder image",
   },
   logInText: "Already have an account?",
