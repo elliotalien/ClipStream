@@ -1,17 +1,12 @@
-import dynamic from 'next/dynamic';
-import { RxChevronRight } from 'react-icons/rx';
-const Button = dynamic(() => import('@relume_io/relume-ui').then(mod => mod.Button), { ssr: false });
-const Tagline = dynamic(() => import('@relume_io/relume-ui').then(mod => mod.Tagline), { ssr: false });
-const Heading = dynamic(() => import('@relume_io/relume-ui').then(mod => mod.Heading), { ssr: false });
-const Text = dynamic(() => import('@relume_io/relume-ui').then(mod => mod.Text), { ssr: false });
-const Img = dynamic(() => import('@relume_io/relume-ui').then(mod => mod.Img), { ssr: false });
+import { Button, Tagline, Heading, Text, Img } from "@relume_io/relume-ui";
+import { RxChevronRight } from "react-icons/rx";
 
 type Props = {
   slot1: React.ReactNode[];
   slot2: React.ReactNode[];
 };
 
-export type Layout1SlotProps = React.ComponentPropsWithoutRef<'section'> & Partial<Props>;
+export type Layout1SlotProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
 export const Layout1Slot = (props: Layout1SlotProps) => {
   const { slot1, slot2 } = {
@@ -33,9 +28,7 @@ export const Layout1Slot = (props: Layout1SlotProps) => {
 
 export const Layout1SlotDefaults: Layout1SlotProps = {
   slot1: [
-    <Tagline key="tagline" className="text-white">
-      Upload
-    </Tagline>,
+    <Tagline key="tagline" className="text-white">Upload</Tagline>,
     <Heading key="heading" headingSize="h2" className="text-white">
       Effortless Video Upload and Segmentation
     </Heading>,
@@ -57,12 +50,5 @@ export const Layout1SlotDefaults: Layout1SlotProps = {
       </Button>
     </div>,
   ],
-  slot2: [
-    <Img
-      key="feature-img"
-      src="https://res.cloudinary.com/do5et2jlh/image/upload/v1727952839/Feature_gyljzn.jpg"
-      alt="Feature Image"
-      className="rounded-lg"
-    />,
-  ],
+  slot2: [<Img key="feature-img" src="https://res.cloudinary.com/do5et2jlh/image/upload/v1727952839/Feature_gyljzn.jpg" />],
 };
