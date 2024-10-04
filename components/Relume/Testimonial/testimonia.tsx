@@ -1,9 +1,10 @@
 import React from "react";
 import { Testimonial1Defaults } from "@/Data/Data"; 
+import Image from 'next/image';
 
 type ImageProps = {
   src: string;
-  alt?: string;
+  alt: string;
 };
 
 type Props = {
@@ -29,9 +30,11 @@ export const Testimonial1 = (props: Testimonial1Props) => {
         <div className="flex flex-col items-center text-center">
           <blockquote className="my-6 text-xl font-bold md:my-8 md:text-2xl">{quote}</blockquote>
           <div className="flex flex-col items-center justify-center">
-            <img
+            <Image
               src={avatar.src}
               alt={avatar.alt}
+              width={50}
+              height={50}
               className="mb-4 size-16 min-h-16 min-w-16 rounded-full object-cover"
             />
             <div className="flex flex-col items-center justify-center ">

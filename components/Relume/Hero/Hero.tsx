@@ -1,7 +1,8 @@
 import { Button } from "@relume_io/relume-ui";
 import type { ButtonProps } from "@relume_io/relume-ui";
 import React from "react";
-import { headerData } from "@/Data/Data"; 
+import Image from 'next/image';
+import { headerData } from "@/Data/Data";
 
 type ImageProps = {
   src: string;
@@ -75,10 +76,14 @@ const ImageGrid = ({ images }: { images: ImageProps[] }) => (
     {images.map((image, index) => (
       <div key={index} className="grid size-full grid-cols-1 gap-4">
         <div className="relative w-full pt-[120%]">
-          <img
-            className="absolute inset-0 size-full object-cover"
+          <Image
             src={image.src}
-            alt={image.alt}
+            alt={image.alt || ''}
+            layout="fill"
+            objectFit="cover"
+            loading="lazy"
+            placeholder="blur"
+            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI8wNPvd7POQAAAABJRU5ErkJggg=="
           />
         </div>
       </div>

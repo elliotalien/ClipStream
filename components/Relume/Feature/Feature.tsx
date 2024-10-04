@@ -1,4 +1,6 @@
-import { Button, Tagline, Heading, Text, Img } from "@relume_io/relume-ui";
+import React, { memo } from 'react';
+import Image from 'next/image';
+import { Button, Tagline, Heading, Text } from "@relume_io/relume-ui";
 import { RxChevronRight } from "react-icons/rx";
 
 type Props = {
@@ -8,7 +10,23 @@ type Props = {
 
 export type Layout1SlotProps = React.ComponentPropsWithoutRef<"section"> & Partial<Props>;
 
-export const Layout1Slot = (props: Layout1SlotProps) => {
+const OptimizedImage = memo(({ src, alt }: { src: string, alt: string }) => (
+  <div className="relative w-full h-0 pb-[56.25%]"> {/* 16:9 aspect ratio */}
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes="(max-width: 768px) 100vw, 50vw"
+      style={{ objectFit: 'cover' }}
+      loading="eager"
+      priority
+    />
+  </div>
+));
+
+OptimizedImage.displayName = 'OptimizedImage';
+
+export const Layout1Slot = memo((props: Layout1SlotProps) => {
   const { slot1, slot2 } = {
     ...Layout1SlotDefaults,
     ...props,
@@ -24,7 +42,9 @@ export const Layout1Slot = (props: Layout1SlotProps) => {
       </div>
     </section>
   );
-};
+});
+
+Layout1Slot.displayName = 'Layout1Slot';
 
 export const Layout1SlotDefaults: Layout1SlotProps = {
   slot1: [
@@ -50,5 +70,11 @@ export const Layout1SlotDefaults: Layout1SlotProps = {
       </Button>
     </div>,
   ],
-  slot2: [<Img key="feature-img" src="https://res.cloudinary.com/do5et2jlh/image/upload/v1727952839/Feature_gyljzn.jpg" />],
+  slot2: [
+    <OptimizedImage 
+      key="feature-img" 
+      src="https://res.cloudinary.com/do5et2jlh/image/upload/v1727952839/Feature_gyljzn.jpg"
+      alt="Feature illustration"
+    />
+  ],
 };

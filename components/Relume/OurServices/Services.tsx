@@ -4,10 +4,11 @@ import { useRef } from "react";
 import { useMediaQuery } from "@relume_io/relume-ui";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { Layout415Defaults } from "@/Data/Data";
+import Image from 'next/image';
 
 type ImageProps = {
   src: string;
-  alt?: string;
+  alt: string;
 };
 
 type FeatureSectionProps = {
@@ -108,7 +109,14 @@ const FeatureSection = ({
       }}
     >
       <div className="rb-6 mb-6 md:mb-8">
-        <img src={section.icon.src} alt={section.icon.alt} className="size-12" />
+      <Image 
+          src={section.icon.src} 
+          alt={section.icon.alt} 
+          width={50} 
+          height={50}
+          className="size-12" 
+          loading="lazy" 
+        />
       </div>
       <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">{section.title}</h3>
       <p>{section.description}</p>
